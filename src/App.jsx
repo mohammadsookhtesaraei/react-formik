@@ -5,8 +5,8 @@ import SingUp from './components/SingUp';
 const App = () => {
   return (
     <div>
-      <SingUp/>
-     {/* <Login/> */}
+      {/* <SingUp/> */}
+     <Login/>
     </div>
   );
 }
