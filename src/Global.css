@@ -1,3 +1,84 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color:#334155;
+    font-family: "Poppins",sans-serif;
+}
+
+
+@layer components {
+
+
+    .container {
+        @apply h-screen m-auto;
+    }
+
+    .form {
+        @apply p-[20px] m-[20px]  md:p-[50px] w-fit h-fit;
+    }
+    .box {
+        @apply h-[75px]
+    }
+
+    .label {
+        @apply text-white mb-1;
+    }
+    .input {
+        @apply w-[250px]  md:w-[300px] bg-gray-900/10 rounded  h-[30px] px-2 py-1 text-white text-sm border-[1px] outline-none focus:border-blue-500 transition-all ease-in duration-100 focus:h-[30px] focus:leading-8;
+    }
+
+    .input2{
+     @apply w-[250px]  md:w-[300px] bg-gray-900/10 rounded  h-[30px] px-2 py-1  text-white text-sm border-[1px] outline-none focus:border-red-500 transition-all ease-in duration-100 focus:h-[30px] leading-8;
+    }
+    
+
+    .checkbox {
+        @apply h-[10px] w-[10px] mb-1 ml-1;
+    }
+
+    .button {
+        @apply bg-blue-400 text-white w-full rounded hover:bg-blue-500 hover:transition-all ease-in-out duration-700;
+    }
+
+
+    .boxR {
+        @apply w-[300px] h-[364px] backdrop-blur-xl bg-white/5 rounded-md shadow-box;
+    }
+
+    .boxChild {
+        @apply text-white
+    }
+
+    .errors {
+        @apply text-red-500 text-sm h-[20px] mt-1  w-fit
+            
+    }
+
+
+    /* flexbox */
+
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+
+    .flex-center-col {
+        @apply flex items-center justify-center flex-col;
+    }
+
+    .flex-cols {
+        @apply flex flex-col;
+    }
+
+    .flex-justify-start {
+        @apply flex items-center justify-start;
+    }
+}
+
