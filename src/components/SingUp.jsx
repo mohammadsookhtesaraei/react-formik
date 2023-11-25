@@ -35,7 +35,6 @@ const SingUp = () => {
            <div className="hidden md:flex-center-col boxR">
             <p className="boxChild">Welcome</p>
             <span className="boxChild">Register now and join us!</span>
-
            </div>
         </div>
     );

@@ -1,10 +1,12 @@
 
+import Login from './components/Login';
 import SingUp from './components/SingUp';
 
 const App = () => {
   return (
     <div>
-      <SingUp/>
+      {/* <SingUp/> */}
+     <Login/>
     </div>
   );
 }
