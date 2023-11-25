@@ -16,51 +16,79 @@ body {
 
 @layer components {
 
-
+     /* for container */
     .container {
         @apply h-screen m-auto;
     }
 
+    /* for form */
+
     .form {
         @apply p-[20px] m-[20px]  md:p-[50px] w-fit h-fit;
     }
+
+    /* for div in form children */
     .box {
         @apply h-[75px]
     }
+    /* for label */
 
     .label {
         @apply text-white mb-1;
     }
+
+    /* base input */
     .input {
         @apply w-[250px]  md:w-[300px] bg-gray-900/10 rounded  h-[30px] px-2 py-1 text-white text-sm border-[1px] outline-none focus:border-blue-500 transition-all ease-in duration-100 focus:h-[30px] focus:leading-8;
     }
 
+    /* error input */
+
     .input2{
      @apply w-[250px]  md:w-[300px] bg-gray-900/10 rounded  h-[30px] px-2 py-1  text-white text-sm border-[1px] outline-none focus:border-red-500 transition-all ease-in duration-100 focus:h-[30px] leading-8;
     }
+
+    /* checkbox div */
     
+    .boxcheck {
+        @apply h-11 mt-1
+    }
 
     .checkbox {
         @apply h-[10px] w-[10px] mb-1 ml-1;
     }
 
-    .button {
-        @apply bg-blue-400 text-white w-full rounded hover:bg-blue-500 hover:transition-all ease-in-out duration-700;
+    /* error checkbox */
+    .checkErrors {
+        @apply text-red-500 text-xs  w-fit
     }
+    
 
-
-    .boxR {
-        @apply w-[300px] h-[364px] backdrop-blur-xl bg-white/5 rounded-md shadow-box;
-    }
-
-    .boxChild {
-        @apply text-white
-    }
-
+    /* for all errors */
     .errors {
         @apply text-red-500 text-sm h-[20px] mt-1  w-fit
             
     }
+
+    /* for submit btn */
+
+    .button {
+        @apply bg-blue-400 text-white w-full rounded hover:bg-blue-500 hover:transition-all ease-in-out duration-700;
+    }
+
+    /* for box right */
+    .boxR {
+        @apply w-[300px] h-[364px] backdrop-blur-xl bg-white/5 rounded-md shadow-box;
+    }
+  
+    /* p and span tags in box right */
+    .boxChild {
+        @apply text-white
+    }
+
+
+
+ 
 
 
     /* flexbox */
