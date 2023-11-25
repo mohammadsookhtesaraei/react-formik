@@ -60,9 +60,9 @@ body {
 
     /* error checkbox */
     .checkErrors {
-        @apply text-red-500 text-xs  w-fit
+        @apply text-red-500 text-xs  w-fit 
     }
-    
+
 
     /* for all errors */
     .errors {
