@@ -10,14 +10,16 @@ const Login = () => {
       password: "",
     },
 
-    onSubmit: (values) => {},
+    onSubmit: (values) => {
+      console.log(values)
+    },
 
     validationSchema: mySchema,
   });
 
   return (
     <div className="container flex-center">
-      <form className="form">
+      <form onSubmit={formik.handleSubmit} className="form">
         {/* email */}
         <div className="box flex-cols">
           <label className="label" htmlFor="email">
